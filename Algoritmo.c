@@ -39,7 +39,10 @@ double somatorioDosQueLigamEmMim(struct PageRank *minhaAmostra, int indice){ //F
 int comparaPR(const void * a, const void *b){ //Funçao para comparacao
 
 	if((*(struct PageRank*)a).valorAtual == (*(struct PageRank*)b).valorAtual){// Quando os dois valores do PageRank forem iguais
-		return 0;
+		if((*(struct PageRank*)a).IndicedaPagina > (*(struct PageRank*)b).IndicedaPagina){
+			return -1;
+		}else
+			return 1;
 	}
 	if((*(struct PageRank*)a).valorAtual>(*(struct PageRank*)b).valorAtual) // Quando o primeiro valor do PageRank for maior
 		return -1;
