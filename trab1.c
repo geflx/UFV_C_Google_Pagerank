@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>	
+#include <math.h>
 #include <stdlib.h>
 #include <string.h>
 //Desenvolvido por Gabriel Felix e Matheus Lima em 07/09/2018
@@ -13,7 +13,7 @@ struct PageRank{  //Struct do page rank
     int n_SaiDeMim;  //número dos links que "Saem" da página
     int *LigaEmMim; //páginas que "Chegam"
     int n_LigaEmMim; //número de páginas que "Chegam"
-};	
+};
 
 int E(struct PageRank *minhaAmostra, int numeroPaginas){ //Funcao atrelada ao Termino do Calculo.
 	double somatorio=0;
@@ -36,10 +36,10 @@ double somatorioDosQueLigamEmMim(struct PageRank *minhaAmostra, int indice){ //F
 	return somatorio;
 }
 
-int comparaPR(const void * a, const void *b){ //Funçao para comparacao
+int comparaPR(const void * a, const void *b){ //Funçao para comparacao, usada na funcao qsort
 
-	if((*(struct PageRank*)a).valorAtual == (*(struct PageRank*)b).valorAtual){// Quando os dois valores do PageRank forem iguais
-		if((*(struct PageRank*)a).IndicedaPagina > (*(struct PageRank*)b).IndicedaPagina){
+	if((*(struct PageRank*)a).valorAtual == (*(struct PageRank*)b).valorAtual){// Quando os dois valores do PageRank forem iguais:
+		if((*(struct PageRank*)a).IndicedaPagina > (*(struct PageRank*)b).IndicedaPagina){ //dai nesse caso olhamos o indice
 			return -1;
 		}else
 			return 1;
@@ -56,7 +56,7 @@ int main(){
     int numeroPaginas=-1; //Verifica se estamos no primeiro laco da leitura, lendo o numeroPaginas (n)
     struct PageRank *minhaAmostra;
     int jaAlocou=0; //variavel utilizada para verificar se ja alocamos a memória para as paginas
-	while(1){ 
+	while(1){
 
 		if((numeroPaginas!=-1) &&(jaAlocou==0)){ //Verificando se ja lemos o numero de paginas para assim alocar a memoria!
 			minhaAmostra=calloc(numeroPaginas, sizeof(struct PageRank));
@@ -107,7 +107,7 @@ int main(){
     /////////////////Fim da Inicializacao ////////////////////
 
 
-    
+
     //////////////////Calculo do PageRank ///////////////////
     int aindaNaoAcabou = 0;
     double constanteUm = (1-0.85)/(double)numeroPaginas; //Duas variaveis para deixar receber os valores constantes descritos no trabalho.
@@ -118,7 +118,7 @@ int main(){
     			double temp= minhaAmostra[i].valorAtual;
     			minhaAmostra[i].valorAtual= constanteUm + constanteDois * minhaAmostra[i].valorAntigo + constanteDois * somatorioDosQueLigamEmMim(minhaAmostra,i);
     			minhaAmostra[i].valorAntigo= temp;
-    		}else{	
+    		}else{
     			//Tipo de pagina 2: Pagina que tem link para alguem
     			double temp= minhaAmostra[i].valorAtual;
     			minhaAmostra[i].valorAtual= constanteUm + constanteDois * somatorioDosQueLigamEmMim(minhaAmostra,i);
@@ -143,7 +143,7 @@ int main(){
 	for(int cont=numeroPaginas-1;cont>=0;cont--){
 		printf("%d \n",minhaAmostra[cont].IndicedaPagina);
 	}
-
+	///////////////Fim da impressao!////////////////
 
 
     ////////////Liberando os dados das paginas////////////
@@ -152,6 +152,6 @@ int main(){
     }
     free(minhaAmostra);
     ///////////////Fim da liberaçao de memoria! >:-) /////////////////
-	
+
 	return 0;
 }
