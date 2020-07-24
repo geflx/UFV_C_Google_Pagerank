@@ -20,7 +20,7 @@ sudo apt-get install make
 Consider the following instance, with five pages and its output liked pages:
 
 <p align="center">
-  <img src="assets/sample.png" align=center width=250 height=450/>
+  <img src="assets/sample.png" align=center width=350 height=450/>
 </p>
 
 For each page, its PageRank value PR(i) is initialized as:
@@ -36,12 +36,12 @@ At each iteration k, PR(i) refreshs following this rule:
 </p>
 
 In the definition above:
-• PR (i) denotes the PageRank of page i;
-• n is total number of pages;
-• d is a parameter, between 0 and 1. Normally, it is worth 0.85.
-• In (k) is the set of all pages that link to page k;
-• Out (k) is the set of all pages with a link coming out of page k;
-• |Y| denotes the number of elements in any set Y.
+• PR (i) denotes the PageRank of page i;  
+• n is total number of pages;  
+• d is a parameter, between 0 and 1. Normally, it is worth 0.85.  
+• In (k) is the set of all pages that link to page k;  
+• Out (k) is the set of all pages with a link coming out of page k;  
+• |Y| denotes the number of elements in any set Y.  
 
 The "Power Method" stops the calculation when E(k) < ε = 10-6 is achieved, begin E(k) described as follows: 
 <p align="center">
