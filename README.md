@@ -28,13 +28,13 @@ Consider the following instance, with five pages and its output liked pages as s
 For each page, its PageRank value PR(i) is initialized as:
 
 <p align="center">
-  <img src="assets/init_pagerank.jpg" width="330" height="85"/>
+  <img src="assets/init_pagerank.jpg" width="270" height="70"/>
 </p>
 
 At each iteration k, the PR(i) values are refreshed following this rule:
 
 <p align="center">
-  <img src="assets/pagerank.jpg" width="590" height="180"/>
+  <img src="assets/pagerank.jpg" width="630" height="180"/>
 </p>
 
 In the definition above:  
