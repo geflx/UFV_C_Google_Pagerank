@@ -1,7 +1,7 @@
 # Google’s PageRank
-First work in CS Course, implementing first algorithm used from Google to **rank web searchs**, the PageRank. 
+First college work in Computer Science course, implementing the first algorithm used from Google to **rank web searches**, the PageRank. 
 In this problem, there are N pages, each one having at most N-1 linked output pages. 
-We want to know **which order to show** the user in its web search, based on the pages relevance. 
+We want to know **which order to show** the user in its web search, based on the relevance of the pages. 
 The iterative method for calculating the PageRank is implemented here, known as "Power Method".
 
 ## How to run?
@@ -58,7 +58,7 @@ Ordered Pages:
 
 ## Conclusions
 
-This implementation of the"Power Method" was pretty challenging and fun, so as a first semester college work it was really awesome to do.
+This implementation of the"Power Method" was pretty challenging and fun, so as a first-semester college work it was really awesome to do.
 
 ## Team
 - Gabriel Félix
