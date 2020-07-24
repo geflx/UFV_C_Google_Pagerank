@@ -43,7 +43,7 @@ In the definition above:
 • **Out (k)** is the set of all pages with a link coming out of page k;  
 • **|Y|** denotes the number of elements in any set Y.  
 
-The "Power Method" stops the calculation when E(k) < ε = 10-6 is achieved, begin E(k) described as follows: 
+The "Power Method" stops the calculation when E(k) < ε = 10-6 is achieved, being E(k) described as follows: 
 <p align="center">
   <img src="assets/stop_condition.jpg" />
 </p>
