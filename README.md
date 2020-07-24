@@ -1,5 +1,8 @@
 # Google’s PageRank
-First work in CS Course, implementing first algorithm used from Google to **rank web searchs**, the PageRank. In this problem, there are N pages, each one having at most N-1 linked output pages. You want to know **which order to show** the user in its search, based on its relevance. The iterative method for calculating the PageRank is implemented here, known as "Power Method".
+First work in CS Course, implementing first algorithm used from Google to **rank web searchs**, the PageRank. 
+In this problem, there are N pages, each one having at most N-1 linked output pages. 
+We want to know **which order to show** the user in its web search, based on the pages relevance. 
+The iterative method for calculating the PageRank is implemented here, known as "Power Method".
 
 ## How to run?
 
@@ -16,8 +19,7 @@ sudo apt-get install make
 ```
 ## Example
 
-...
-Consider the following instance, with five pages and its output liked pages:
+Consider the following instance, with five pages and its output liked pages as shown below:
 
 <p align="center">
   <img src="assets/sample.png" align=center width=350 height=450/>
@@ -29,7 +31,7 @@ For each page, its PageRank value PR(i) is initialized as:
   <img src="assets/init_pagerank.jpg" />
 </p>
 
-At each iteration k, PR(i) refreshs following this rule:
+At each iteration k, the PR(i) values are refreshed following this rule:
 
 <p align="center">
   <img src="assets/pagerank.jpg" />
@@ -43,7 +45,7 @@ In the definition above:
 • **Out (k)** is the set of all pages with a link coming out of page k;  
 • **|Y|** denotes the number of elements in any set Y.  
 
-The "Power Method" stops the calculation when E(k) < ε = 10-6 is achieved, being E(k) described as follows: 
+The "Power Method" stops the calculation when the condition E(k) < ε = 10-6 is achieved, being E(k) described as follows: 
 <p align="center">
   <img src="assets/stop_condition.jpg" />
 </p>
@@ -51,6 +53,8 @@ The "Power Method" stops the calculation when E(k) < ε = 10-6 is achieved, bein
 ...
 
 ## Conclusions
+
+This implementation of the"Power Method" was pretty challenging and fun, so as a first semester college work it was really awesome to do.
 ...
 
 ## Team
