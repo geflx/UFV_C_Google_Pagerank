@@ -28,13 +28,13 @@ Consider the following instance, with five pages and its output liked pages as s
 For each page, its PageRank value PR(i) is initialized as:
 
 <p align="center">
-  <img src="assets/init_pagerank.jpg" width="280" height="100"/>
+  <img src="assets/init_pagerank.jpg" width="330" height="85"/>
 </p>
 
 At each iteration k, the PR(i) values are refreshed following this rule:
 
 <p align="center">
-  <img src="assets/pagerank.jpg" width="550" height="180"/>
+  <img src="assets/pagerank.jpg" width="590" height="180"/>
 </p>
 
 In the definition above:  
@@ -47,7 +47,7 @@ In the definition above:
 
 The "Power Method" stops the calculation when the condition E(k) < ε = 10-6 is achieved, being E(k) described as follows: 
 <p align="center">
-  <img src="assets/stop_condition.jpg" width="260" height="100"/>
+  <img src="assets/stop_condition.jpg" width="330" height="100"/>
 </p>
 
 After this condition is achieved, the program outputs the desired sequence:
