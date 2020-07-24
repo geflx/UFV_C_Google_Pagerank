@@ -1,2 +1,6 @@
-compila_tudo: trab1.c 
-	gcc -o trab1 trab1.c -lm
+all: compile run
+
+compile: pagerank.c 
+	gcc pagerank.c -lm
+run: a.out
+	./a.out <input.txt
