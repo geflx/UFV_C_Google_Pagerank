@@ -3,9 +3,9 @@ First ever work in CS Course at UFV, implementing first algorith used from Googl
 
 ## How to run?
 
-First, make sure gcc and makefile are both installed in your machine. 
-Secondly, make sure input file "input.txt" is in the same folder as "pagerank.c", the program.
-Then run this command in bash:
+First, make sure gcc and makefile are both installed in your machine.  
+Secondly, make sure input file "input.txt" is in the same folder as "pagerank.c".  
+Then, run this command in bash:
 ```
 make
 ```
