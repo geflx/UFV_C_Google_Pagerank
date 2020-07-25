@@ -1,10 +1,10 @@
-# Google’s PageRank
+# Google’s PageRank :page_with_curl:
 First college work in Computer Science course, implementing the first algorithm used from Google to **rank web searches**, the PageRank. 
 In this problem, there are N pages, each one having at most N-1 linked output pages. 
 We want to know **which order to show** the user in its web search, based on the relevance of the pages. 
 The iterative method for calculating the PageRank is implemented here, known as "Power Method".
 
-## How to run?
+## How to run? :running:
 
 1 - Make sure gcc and makefile are both installed in your machine.  
 2 - Assert that input file "input.txt" is in the same folder as **"pagerank.c"**.  
@@ -17,7 +17,7 @@ In case neither gcc or makefile are installed:
 sudo apt-get install gcc
 sudo apt-get install make
 ```
-## Example
+## Example :pencil2:
 
 Consider the following instance, with five pages and its output liked pages as shown below:
 
@@ -56,7 +56,7 @@ Ordered Pages:
 {2, 1, 3, 4, 0}
 ```
 
-## Conclusions
+## Conclusions :mag_right:
 
 This implementation of the"Power Method" was pretty challenging and fun, so as a first-semester college work it was really awesome to do.
 
