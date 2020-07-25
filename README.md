@@ -10,12 +10,12 @@ The iterative method for calculating the PageRank is implemented here, known as 
 2 - Assert that input file "input.txt" is in the same folder as **"pagerank.c"**.  
 3 - Run this command in bash:
 ```
-make
+$ make
 ```
 In case neither gcc or makefile are installed:
 ```
-sudo apt-get install gcc
-sudo apt-get install make
+$ sudo apt-get install gcc
+$ sudo apt-get install make
 ```
 ## Example :pencil2:
 
