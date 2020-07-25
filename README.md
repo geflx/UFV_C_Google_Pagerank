@@ -60,6 +60,6 @@ Ordered Pages:
 
 This implementation of the"Power Method" was pretty challenging and fun, so as a first-semester college work it was really awesome to do.
 
-## Team
+## Team :octocat:
 - Gabriel Félix
-- Matheus Lima
+- [Matheus Lima](https://github.com/MatheusAL)
